@@ -21,4 +21,4 @@ git add [file] --> git commit -m ["commit message"] --> git push
 After you commit your file, you can create a pull request. A pull request announces that you've added or modified files that you'd like compared to the master files in the repository. You can create a pull request from GitHub which allows a user to compare the modified files to the original. If the changes are deemed good, the file can be merged to the master.
 
 -Why are pull requests preferred when working with teams?
-Pull requests are preferred when working in teams because a pull request is sort of like a staging area for files to be reviewd before being merged to the master branch. 
+Pull requests are preferred when working in teams because a pull request is sort of like a staging area for files to be reviewd before being merged to the master branch.  
