@@ -1,4 +1,4 @@
-![My first site map](/Users/alanafarkas/Desktop/DBC/Phase-0/week-2/imgs/site-map.jpg)
+![My first site map](https://github.com/AlanaFarkas/Phase-0/blob/master/week-2/imgs/site-map-image.jpg)
 
 -What are the 6 Phases of Web Design?
 	-Purpose
