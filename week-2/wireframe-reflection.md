@@ -1,6 +1,6 @@
-![Wireframe](https://github.com/AlanaFarkas/Phase-0/blob/master/week-2/imgs/wire-framing.pdf)
+![Wireframe](https://github.com/AlanaFarkas/Phase-0/blob/master/week-2/imgs/wire-framing.jpg)
 
-![Blog page wireframe](https://github.com/AlanaFarkas/Phase-0/blob/master/week-2/imgs/wireframe-blog-index.pdf)
+![Blog page wireframe](https://github.com/AlanaFarkas/Phase-0/blob/master/week-2/imgs/wireframe-blog-index.jpg)
 
 -What is a wireframe?
 Wireframing is a a blueprint for how a site should look, that is created before the site is coded, akin to drawing up architectural blueprints before construction begins.
