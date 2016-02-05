@@ -1,34 +1,44 @@
+
+html {
+  background-color: #ffffff;
+}
+
 body {
   color: #000080;
 }
-a:visited {
-  color: #ff0000;
-}
+
 a {
   color: #800080;
   font-size: 16px;
 }
-html {
-  background-color: #ffffff;
-}
-.left {
-  float: left;
-  
-}
-.right {
-  float: right;
 
-
-}
-ul {
-  font-size: 12px;
+a:visited {
+  color: #ff0000;
 }
 
 header {
-  text-decoration: bold;
-  font-size: 25px;
+  font-size: 20px;
   text-align: center;
+  font-weight: bold;
+  border-bottom: 1px solid gray;
 }
+
+/*.left {
+  float: left;
+ }
+
+.right {
+  float: right;
+}*/
+
+ul {
+  font-size: 12px;
+ }
+
+li {
+	margin: 30px;
+}
+
 
 header::first-letter {
 	font-size: 200%;
@@ -42,20 +52,65 @@ header::first-letter {
 #address1 {
 	display: block;
 	margin-top: -10px;
+	font-size: 14px;
 }
 
 #address2 {
 	display: block;
-	margin-top: -30px;
+	margin-top: -20px;
+	font-size: 14px;
 }
 
 #address3 {
 	display: block;
-	margin-top: -30px;
-	font-size: 20px;
-
+	margin-top: -20px;
+	font-size: 22px;
 }
 
-#B {
-	font-size: 30px;
+
+#first6 {
+	float: left;
+	display: inline-block;
 }
+
+#second7 {
+	float: right;
+	display: inline-block;
+}
+
+#Geico {
+	border-top: 1px solid gray;
+	margin-bottom: 0px;
+	padding: 15px;
+	display: block;
+	clear: both;
+	text-align: center;
+}
+
+#Geico p {
+	font-size: 12px;
+	margin: -3px;
+}
+
+#fineprint {
+	border-top: 1px solid gray;
+	display: block;
+	padding: 15px;
+}
+
+footer {
+	border-top: 1px solid gray;
+	display: block;
+	padding: 15px;
+}
+
+footer p {
+	display: inline;
+	font-size: 12px;
+	margin-bottom: 10px;
+}
+
+#foottext {
+	font-weight: bold;
+}
+
