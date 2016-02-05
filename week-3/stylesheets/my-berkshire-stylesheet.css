@@ -1,0 +1,61 @@
+body {
+  color: #000080;
+}
+a:visited {
+  color: #ff0000;
+}
+a {
+  color: #800080;
+  font-size: 16px;
+}
+html {
+  background-color: #ffffff;
+}
+.left {
+  float: left;
+  
+}
+.right {
+  float: right;
+
+
+}
+ul {
+  font-size: 12px;
+}
+
+header {
+  text-decoration: bold;
+  font-size: 25px;
+  text-align: center;
+}
+
+header::first-letter {
+	font-size: 200%;
+}
+
+#H {
+	font-size: 200%;
+	display: inline;
+}
+
+#address1 {
+	display: block;
+	margin-top: -10px;
+}
+
+#address2 {
+	display: block;
+	margin-top: -30px;
+}
+
+#address3 {
+	display: block;
+	margin-top: -30px;
+	font-size: 20px;
+
+}
+
+#B {
+	font-size: 30px;
+}
