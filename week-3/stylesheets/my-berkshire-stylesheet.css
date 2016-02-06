@@ -1,0 +1,142 @@
+/*
+
+-What is important to know when linking an external file (like a stylesheet) to an HTML file?
+
+It is important to use the proper link tag (ext. <link rel="stylesheet" type="text/css" href="filename.css">) and to pay attention to files paths!
+
+-What tricks did you use to help you with positioning? How hard was it to get the site as you wanted it?
+I don't know if it's a 'trick' but when styling margins, padding, and borders it's helpful to code clockwise so that you can style margins like this margin: #px #px #px #px instead of writing margin-top: #px, margin-right: #px, margin-bottom: #px, margin-left: #px.
+
+
+-What CSS did you use to modify the element style (like size, color, etc.)
+I used several CSS to style elements, such as font-size, font-weight, text-align, and others.
+
+
+-Did you modify the HTML to include classes or ids? If so, which did you choose and why? If you didn't, how would you know which one to add to your HTML?
+
+I did use classes and ids which was useful for styling many of my elements. I used classes for formatting elements with the same class tag to manipulate those elements all at once. I used ids when I needed to style a very specific element. Ids should only be used once per project.
+
+-When you compared your site to the actual code base, which do you think had cleaner code that followed best practices and why?
+
+I have to admit that the real site's code is cleaner than my code, however, the site's code uses a table to help format the links on the page, but I recall reading that that practice is out of date--tables should only be used to make tables and not as a workaround to cleaner formatting. HTML5 added new elements to be more specific and semantic and using table tags to create anything but a table doesn't jive with HTML5's philosophy.
+
+*/
+
+
+
+
+html {
+  background-color: #ffffff;
+}
+
+body {
+  color: #000080;
+}
+
+a {
+  color: #800080;
+  font-size: 16px;
+}
+
+a:visited {
+  color: #ff0000;
+}
+
+header {
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  border-bottom: 1px solid gray;
+}
+
+/*.left {
+  float: left;
+ }
+
+.right {
+  float: right;
+}*/
+
+ul {
+  font-size: 12px;
+ }
+
+li {
+	margin: 30px;
+}
+
+
+header::first-letter {
+	font-size: 200%;
+}
+
+#H {
+	font-size: 200%;
+	display: inline;
+}
+
+#address1 {
+	display: block;
+	margin-top: -10px;
+	font-size: 14px;
+}
+
+#address2 {
+	display: block;
+	margin-top: -20px;
+	font-size: 14px;
+}
+
+#address3 {
+	display: block;
+	margin-top: -20px;
+	font-size: 22px;
+}
+
+
+#first6 {
+	float: left;
+	display: inline-block;
+}
+
+#second7 {
+	float: right;
+	display: inline-block;
+}
+
+#Geico {
+	border-top: 1px solid gray;
+	margin-bottom: 0px;
+	padding: 15px;
+	display: block;
+	clear: both;
+	text-align: center;
+}
+
+#Geico p {
+	font-size: 12px;
+	margin: -3px;
+}
+
+#fineprint {
+	border-top: 1px solid gray;
+	display: block;
+	padding: 15px;
+}
+
+footer {
+	border-top: 1px solid gray;
+	display: block;
+	padding: 15px;
+}
+
+footer p {
+	display: inline;
+	font-size: 12px;
+	margin-bottom: 10px;
+}
+
+#foottext {
+	font-weight: bold;
+}
+
