@@ -4,6 +4,7 @@ Using Chrome's DevTools inspector helps format or position elements by allowing 
 
 
 *How can you resize elements on the DOM using CSS?
+
 Manipulating height and width using CSS will resize an element in the DOM. 
 
 
