@@ -41,5 +41,5 @@ I would type "rspec [file_name.rb]" to run an RSpec file in from the command lin
 Most everything made sense as a review of concepts I learned while preparing to apply to DBC, so it felt great to go over this material again. I was a little confused when Chris Pine's book mentioned line spacing/formatting though--wouldn't we do that using CSS somehow? I look forward to finding that out!
 =end
 
-[4.3.1](https://github.com/AlanaFarkas/Phase-0/blob/master/week-4/address/my_solution.rb)
-[4.3.2](https://github.com/AlanaFarkas/Phase-0/tree/master/week-4/math)
+4.3.1 -- https://github.com/AlanaFarkas/Phase-0/blob/master/week-4/address/my_solution.rb
+4.3.2 -- https://github.com/AlanaFarkas/Phase-0/tree/master/week-4/math
