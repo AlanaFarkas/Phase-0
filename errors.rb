@@ -28,7 +28,7 @@ end
 	#Syntax error
 #
 # 4. What additional information does the interpreter provide about this type of error?
-	#The interpreter reads "unexepected end-of-input, expecting keyword_end".
+	#The interpreter reads "unexpected end-of-input, expecting keyword_end".
 #
 # 5. Where is the error in the code?
 	#Line 17. The interpretor was expecting an "end" to finish the cartman_hates method. 
@@ -113,7 +113,7 @@ cartman_says("Up ya nose with a rubber hose!")
 	#The interpretor reads "ArgumentError"
 
 # 3. What additional information does the interpreter provide about this type of error?
-	#The interpetor also reads "wrong number of arguments (0 for 1)"
+	#The interpretor also reads "wrong number of arguments (0 for 1)"
 
 # 4. Where is the error in the code?
 	#Line 107. 
@@ -135,7 +135,7 @@ cartmans_lie('A meteor the size of the earth is about to hit Wyoming', "Alana")
 	#Line 128
 
 # 2. What is the type of error message?
-	#The interpetor reads "ArgumentError"
+	#The interpretor reads "ArgumentError"
 
 # 3. What additional information does the interpreter provide about this type of error?
 	#The interpretor also reads "wrong number of arguments (1 for 2)"
