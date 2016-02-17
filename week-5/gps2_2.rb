@@ -1,37 +1,66 @@
 
-#Method to create a new list input: String steps:  Create a new hash Create a
-#hash with default values at zero Print the hash  output: Hash
+# Method to create a new list 
+# input: String 
+# steps:  Create a new hash. Create a hash with default values at zero. Print the hash  
+# output: Hash
 
-# Method to add an item to a list input: item name and optional quantity
+# Method to add an item to a list 
+# input: item name and optional quantity
 # steps: create method that takes item and quantity and adds them to the hash
 # output: Hash with new item and quantity
 
-# Method to remove an item from the list input: list, item name steps:
-# removes inputted item from hash output: Hash - item removed
+# Method to remove an item from the list 
+# input: list, item name 
+# steps: removes inputted item from hash 
+# output: Hash - item removed
 
-# Method to update the quantity of an item #def update_quantity(value) #
-input: value # steps: # update value of key # output: Hash with updated value
+# Method to update the quantity of an item 
+# input: value 
+# steps: update value of key 
+# output: Hash with updated value
 
-# Method to print a list and make it look pretty def hash_to_string(hash)
-# input: hash steps: convert hash to a string output: string
+# Method to print a list and make it look pretty 
+# input: hash 
+# steps: convert hash to a string 
+# output: string
 
-def create_new_list   return Hash.new(0) end
-
-def add_item(empty_list, item, quantity)   empty_list[item] = quantity   end
-
-def remove_item(empty_list, item)   empty_list.delete(item) end
-
-def update_quantity(empty_list, item, quantity)   empty_list[item] = quantity
+def create_new_list(string)
+  empty_list = Hash.new
+  string = string.split(" ")
+  string.each { |item| empty_list[item] = 0 }
+  empty_list 
 end
 
-def print_list(empty_list) empty_list.each { |item, quantity| puts "#{item}:
-#{quantity}" } end
+
+def add_item(empty_list, item, quantity)  
+ empty_list[item] = quantity   
+end
+
+def remove_item(empty_list, item)   
+empty_list.delete(item) 
+end
+
+def update_quantity(empty_list, item, quantity)   
+empty_list[item] = quantity
+end
+
+def print_list(empty_list) 
+empty_list.each { |item, quantity| puts "#{item}: #{quantity}" } 
+end
   
-empty_list = create_new_list puts empty_list add_item(empty_list, "Lemonade",
-2) add_item(empty_list, "tomatoes", 3) add_item(empty_list, "Onions", 1)
-add_item(empty_list, "Ice Cream", 4) puts empty_list remove_item(empty_list,
-"Lemonade") puts empty_list update_quantity(empty_list, "Ice Cream", 1) puts
-empty_list print_list(empty_list)
+empty_list = create_new_list(" ")
+# puts empty_list 
+add_item(empty_list, "Lemonade", 2) 
+add_item(empty_list, "Tomatoes", 3) 
+add_item(empty_list, "Onions", 1)
+add_item(empty_list, "Ice Cream", 4) 
+# puts empty_list 
+remove_item(empty_list,"Lemonade") 
+# puts empty_list 
+update_quantity(empty_list, "Ice Cream", 1) 
+# puts empty_list 
+print_list(empty_list)
+
 
 # Release 5: Reflect
 
@@ -41,12 +70,8 @@ empty_list print_list(empty_list)
 # pseudocode and comments toward the top of the screen, and driver code at the
 # bottom.
 
-
 # What are the tradeoffs of using Arrays and Hashes for this challenge? 
-#-I don't see how an array could be used to complete this assignment. My partner
-# and I created an empty array at the start to be able to compile a collection
-# of keys and values which were needed in order to keep a list of grocery items
-# and their quantities.
+#- My partner and I created an empty array when we split the string in the first method but that's the only time we thought using arrays was appropriate for this challenge. We needed to be able to compile a collection of keys and values which were needed in order to keep a list of grocery items and their quantities, and so we converted our array into a hash early on.
 
 # What does a method return?  
 # -A method returns the last value accessed by the method.
