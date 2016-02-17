@@ -30,6 +30,9 @@ def my_hash_finding_method(source, thing_to_find)
 end
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> cdf066e5b1973c9c77024c63f24cec68048f7cf8
 # RELEASE 2: Teach others
 # Identify and describe the Ruby method(s) you implemented.
 # Teach your accountability group how to use the methods
@@ -113,6 +116,7 @@ end
 #
 #
 #
+<<<<<<< HEAD
 #
 =======
 # Identify and describe the Ruby method(s) you implemented.
@@ -194,3 +198,6 @@ end
 # #
 # #
 >>>>>>> 5.4-branch
+=======
+#
+>>>>>>> cdf066e5b1973c9c77024c63f24cec68048f7cf8
