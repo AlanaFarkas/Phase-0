@@ -7,9 +7,33 @@
 
 # 0. Pseudocode
 
+<<<<<<< HEAD
 # What is the input? Integer
 # What is the output? String
 # What are the steps needed to solve the problem?
+=======
+# convert integer to string ==> 1000 becomes "1000"
+# reverse! string ==> "1000" becomes "0001"
+# if string.length is <= 3 return string ==> "500"
+
+
+
+
+
+# else if string.length >= 4 && counter = 3, insert ","
+# counter = 0 
+# counter += 1
+#reverse string 
+#output string
+
+# while counter = 3 insert comma
+# reset counter after each comma insertion?
+
+#   if integer.length >= 4
+#  integer.each { |number| p integer[-2] + ","}
+# end
+
+>>>>>>> nums-comma-branch
 
 # Create comma-separated method that accepts an array
 # Set the array to a string
@@ -21,6 +45,7 @@
 #numbers get added to the front of the array
 # Reverse is last step?
 
+<<<<<<< HEAD
   
 def separate_comma(integer)
   
@@ -49,6 +74,31 @@ def separate_comma(integer)
 end
 
 separate_comma(100000)
+=======
+# 1. Initial Solution
+  
+def seperate_comma(integer)
+  integer = integer.to_s.reverse
+  if integer.length <= 3
+      p integer.reverse
+  end
+  
+  counter = 0 
+  # until counter == 3
+
+  
+  if integer.length >= 4
+    p integer + "," 
+    counter =+1   
+end
+  
+
+  p integer.reverse
+
+end
+
+seperate_comma(4000)
+>>>>>>> nums-comma-branch
 
 
 
