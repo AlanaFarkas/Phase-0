@@ -20,37 +20,33 @@
 #numbers get added to the front of the array
 # Reverse is last step?
 
-
-
-
+def separate_comma(number)
   
-def separate_comma(integer)
-  
-  integer = integer.to_s
-  counter = 0 
-  
-  if integer.length < 4
-    p integer
-  end
-  
-  if integer.length > 3
-    integer.reverse
-    number_as_string = []
-    counter = 1
-    
-  end
-  
-#  integer = integer.to_s.reverse
-  integer.insert(-3, ",") 
+  number = number.to_s  
    
-#   p integer
+  if number.length < 4
+    return number
+  end
     
-#   end
-  p integer
+  if number.length > 3
+    
+    total_commas_needed = number.to_s.length / 3 #number of commas to add
+    #number of times to iterate over number
+    
+    counter = -4
+    total_commas_needed.times do
+      
+      number.insert(counter, ",")
+      counter -= 4
+      
+    end
+    
+   
+    return number    
+    
  
 end
-
-separate_comma(100000)
+end
 
 
 
