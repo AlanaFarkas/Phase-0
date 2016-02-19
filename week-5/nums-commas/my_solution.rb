@@ -56,47 +56,6 @@ seperate_comma(4000)
 
 
 
-
-# def create_new_list(string)
-#   empty_list = Hash.new
-  
-#   string = string.split(" ")
-#   string.each { |item| empty_list[item] = 0 }
-#   empty_list 
-# end
-
-
-# def add_item(empty_list, item, quantity)  
-#  empty_list[item] = quantity   
-# end
-
-# def remove_item(empty_list, item)   
-# empty_list.delete(item) 
-# end
-
-# def update_quantity(empty_list, item, quantity)   
-# empty_list[item] = quantity
-# end
-
-# def print_list(empty_list) 
-# empty_list.each { |item, quantity| puts "#{item}: #{quantity}" } 
-# end
-  
-# empty_list = create_new_list(" ")
-# # puts empty_list 
-# add_item(empty_list, "Lemonade", 2) 
-# add_item(empty_list, "Tomatoes", 3) 
-# add_item(empty_list, "Onions", 1)
-# add_item(empty_list, "Ice Cream", 4) 
-# # puts empty_list 
-# remove_item(empty_list,"Lemonade") 
-# # puts empty_list 
-# update_quantity(empty_list, "Ice Cream", 1) 
-# # puts empty_list 
-# print_list(empty_list)
-
-
-
 # 2. Refactored Solution
 
 
