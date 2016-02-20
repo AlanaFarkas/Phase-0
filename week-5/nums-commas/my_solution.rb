@@ -20,32 +20,63 @@
 #numbers get added to the front of the array
 # Reverse is last step?
 
+# def separate_comma(number)
+  
+#   number = number.to_s  
+   
+#   if number.length < 4
+#     return number
+#   end
+    
+#   if number.length > 3
+    
+#     total_commas_needed = number.to_s.length / 3 
+
+#     counter = -4
+#     total_commas_needed.times do
+      
+#       number.insert(counter, ",")
+#       counter -= 4
+      
+#     end
+    
+   
+#     return number    
+    
+ 
+# end
+# end
 def separate_comma(number)
   
-  number = number.to_s  
+  number = number.to_s 
+  total_commas_needed = number.length / 3  
    
   if number.length < 4
     return number
-  end
+  end 
+
     
-  if number.length > 3
-    
-    total_commas_needed = number.to_s.length / 3 #number of commas to add
-    #number of times to iterate over number
-    
+  
+  if number.length > 3 && number.length % 3 == 0  
+    total_commas_needed = total_commas_needed-1
+            
     counter = -4
-    total_commas_needed.times do
-      
+    total_commas_needed.times do      
       number.insert(counter, ",")
-      counter -= 4
-      
+      counter -= 4     
     end
-    
+  end 
    
-    return number    
-    
- 
-end
+if number.length > 3        
+    counter = -4
+    total_commas_needed.times do      
+      number.insert(counter, ",")
+      counter -= 4 
+    end
+  end
+
+
+    return number
 end
 
 
