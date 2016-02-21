@@ -75,5 +75,5 @@ accountability_groups(students)
 #I wanted my output to be a hash. For 57 students to be split into groups of 4 or 5 evenly, I needed to create 14 groups. I wanted each key in the hash to represent one of the 14 groups, and each value to include either 4 or 5 students.
 
 # What did you learn in the process of refactoring your initial solution? Did you learn any new Ruby methods?
-# My initial solutions often use built-in methods and so I did not do much refactoring. However, in my intial solution, to keep everything clear to me as I code, I comment next to each line of code what I expect that code to return. In my refactored code I removed the comments.
+# My initial solutions often use built-in methods and so I did not do much refactoring. I go through so much trial and error using my coderpad so I can test out the built-in methods easily and see if they'll work for my needs. In my intial solution, to keep everything clear to me as I code, I comment next to each line of code what I expect that code to return. In my refactored code I removed the comments.
 
