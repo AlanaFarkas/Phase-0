@@ -96,6 +96,30 @@ end
 # 2. Refactored Solution
 
 
+def separate_comma(number)
+  
+  number = number.to_s 
+  total_commas_needed = number.length / 3  
+   
+  if number.length < 4
+    return number  
+  elsif number.length > 3 && number.length % 3 == 0     
+    total_commas_needed = total_commas_needed -1         
+    counter = -4
+    total_commas_needed.times { number.insert(counter, ",")      
+      counter = -4
+    }  
+     return number
+  elsif number.length > 3 
+    counter = -4
+    total_commas_needed.times { number.insert(counter, ",")      
+      counter -= 4
+    }
+  end
+    return number
+end
+
+
 
 
 # 3. Reflection
