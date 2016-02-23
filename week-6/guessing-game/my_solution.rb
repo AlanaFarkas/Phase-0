@@ -12,8 +12,12 @@
 # Pseudocode
 
 # Input: integer
-# Output: symbol
+# Output: symbol/boolean value
 # Steps:
+#DEF #initialize assigns @answer instance variable
+#DEF #guess assigns @guess instance variable. IF @guess is greater than @answer, RETURN :high. ELSIF @guess == @answer RETURN :correct. ELSIF @guess < @answer, RETURN :low.
+#DEF #solved?
+
 
 
 # Initial Solution
@@ -45,9 +49,6 @@ class GuessingGame
   end
 
 end
-
-
-
 
 # Refactored Solution
 
