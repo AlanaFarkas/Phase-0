@@ -6,30 +6,36 @@
 
 # Bakery Serving Size portion calculator.
 
+
 def serving_size_calc(item_to_make, num_of_ingredients)
-  library = {"cookie" => 1, "cake" =>  5, "pie" => 7}
-  error_counter = 3
+  
+  bakery = {"cookie" => 1, "cake" =>  5, "pie" => 7} #rename bakery
 
-  library.each do |food|
-    if library[food] != library[item_to_make]
-      error_counter += -1
-    end
-  end
-
-  if error_counter > 0
+  if bakery.has_key?(item_to_make) == false #if they don't have the item, raises error message
     raise ArgumentError.new("#{item_to_make} is not a valid input")
   end
+  
+  ingredients_needed = bakery[item_to_make] #accessing hash's values by key
+  remaining_ingredients = num_of_ingredients % ingredients_needed
+  string = "Calculations complete: Make #{num_of_ingredients / ingredients_needed} of #{item_to_make}"
 
-  serving_size = library.values_at(item_to_make)[0]
-  remaining_ingredients = num_of_ingredients % serving_size
-
-  case remaining_ingredients
-  when 0
-    return "Calculations complete: Make #{num_of_ingredients / serving_size} of #{item_to_make}"
+  if remaining_ingredients == 0# change to if/else statement
+    #when number of ingredients can be divided evenly by the serving size
+    # output = "You can't make anything else"
+    return string
   else
-    return "Calculations complete: Make #{num_of_ingredients / serving_size} of #{item_to_make}, you have #{remaining_ingredients} leftover ingredients. Suggested baking items: TODO: MAKE THIS FEATURE"
+    if remaining_ingredients >= 5
+      output = "You can bake a cake"
+    else 
+      output = "You can make some cookies"
+    end
+    return string + ", you have #{remaining_ingredients} leftover ingredients. #{output}" 
+    #Suggested baking items: TODO: MAKE THIS FEATURE" 
+    #IF remaining_ingredients >= 5 "you can make a cake" ELSE "can make at least one cookie"
+
   end
 end
+
 
 p serving_size_calc("pie", 7)
 p serving_size_calc("pie", 8)
