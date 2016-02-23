@@ -8,7 +8,7 @@
 
 
 def serving_size_calc(item_to_make, num_of_ingredients)
-  
+   
   bakery = {"cookie" => 1, "cake" =>  5, "pie" => 7} #rename bakery
 
   if bakery.has_key?(item_to_make) == false #if they don't have the item, raises error message
