@@ -7,10 +7,15 @@
 
 # Pseudocode
 
-# Input:
-# Output:
+# Input: Name
+# Output: String
 # Steps:
-# When 
+
+# create #initialize method for NameData equal to my name. create attr_reader method for name. end method. 
+
+# create #initialize method for Greetings that initializes my NameData class. create #salutation method with a string to output a message with my name.
+
+# create new greeting object. call my #salutation method on my new object to output string.
 
 class NameData
 	attr_reader :name
