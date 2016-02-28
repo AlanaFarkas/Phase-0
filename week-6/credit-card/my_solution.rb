@@ -22,7 +22,7 @@
 #3. Collect all digits with even number indexes in evens array and odd number indexes in odds array
 #4. Split odd indexes into strings into separate digits again to be able to add all the numbers
 #5. Push even and odd array together to flatten and add
-#6. Check if sum is a multiple of 10, return true or false
+#6. Check if sum is a multiple of 10, return true or false.
 
 
 # Initial Solution
@@ -101,19 +101,18 @@ class CreditCard
 
   def initialize(number)
     @number = number.to_s.split(//).reverse!
-    @number.map! do |x|
-        x.to_i
+    @number.map! do |digits|
+        digits.to_i
     end        
     @number      
     raise ArgumentError, "Input needs to have a length of 16 integers" unless @number.count == 16
   end
 
-
   def evens
     even_array = []
-    @number.each_with_index do |number, index|
+    @number.each_with_index do |digit, index|
       if index % 2 == 0
-        even_array.push(number)
+        even_array.push(digit)
       end
     end
     even_array
@@ -121,20 +120,15 @@ class CreditCard
 
   def odds
     odd_array = []
-    @number.each_with_index do |number, index|
+    @number.each_with_index do |digit, index|
       if index % 2 != 0
-         odd_array.push(number*2)
+         odd_array.push(digit*2)
       end
        odd_array
     end
 
-    odd_array.map! do |number|
-      number.to_s.split(//)
-    end
-    odd_array.flatten!
-    odd_array.map! do |number|
-      number.to_i
-    end
+    odd_array.map! { |digits| digits.to_s.split(//) }      
+    odd_array.flatten!.map! { |digits| digits.to_i }
     odd_array
   end
   
