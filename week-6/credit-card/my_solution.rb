@@ -1,4 +1,33 @@
 
+# Class Warfare, Validate a Credit Card Number
+
+# For this challenge, you will need to break down the algorithm into the following steps. You will probably want to break these down into individual methods that are called when you run the #check_card method.
+
+# Starting with the second to last digit, double every other digit until you reach the first digit.
+
+# Sum all the untouched digits and the doubled digits (doubled digits need to be broken apart, 10 becomes 1 + 0).
+
+# If the total is a multiple of ten, you have received a valid credit card number!
+
+
+# I worked on this challenge with Brian Donahue
+# I spent 2.5 hours on this challenge.
+
+# Pseudocode
+
+# Input:16 number string, can't be more or less.
+# Output:True or false boolean value for whether %10=0
+# Steps: 1.First, create an initialization method that raises an ArgumentError if it's not a 16 digit input.
+#2.Turn number in to an array of separate numbers in the initialize method and call reverse!
+#3. Collect all digits with even number indexes in evens array and odd number indexes in odds array
+#4. Split odd indexes into strings into separate digits again to be able to add all the numbers
+#5. Push even and odd array together to flatten and add
+#6. Check if sum is a multiple of 10, return true or false
+
+
+# Initial Solution
+
+
 class CreditCard
 
   def initialize(number)
