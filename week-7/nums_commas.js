@@ -38,37 +38,26 @@
 
 
 // Refactored Solution
-
 function commas(number) {
+  var numberString = String(number);
   var commasNeeded = Math.floor(String(number).length/3);
-  var digitArray = String(number).split("").reverse();
-
-  if (String(number).length <= 3) {
-    return number;
-  } 
-
-  else {
-    if (String(number).length == 4) {
-      digitArray.splice(3, 0, ",");;
-    } 
-
-    else {
-      digitArray.splice(3, 0, ",");
-      var commaPosition = 7;
-
-      for (var i = 0; i < commasNeeded - 1; i++) {
-        digitArray.splice(commaPosition, 0, ",");
-        commaPosition += 4;
-      }
-    }
+  var digitArray = numberString.split("").reverse();
+  if (numberString.length <= 3) {
+    return numberString;
+  } else {
+    for (var i = 3; i <= commasNeeded * 4; i+=4) {
+      digitArray.splice(i, 0, ",");
+    };
   }
-  if (String(number).length % 3 === 0) {
+  
+  if (numberString.length % 3 === 0) {
     digitArray.reverse().shift();
     return digitArray.join("");
   } else {
     return digitArray.reverse().join("");
   }
-};
+}
+
 
 
 console.log(commas(100));
@@ -89,4 +78,4 @@ console.log(commas(123456789565));
 // At times, my pair and I got our syntaxes mixed up and had to do remember to use our brackets and semi-colons! 
 
 // What built-in methods did you find to incorporate in your refactored solution?
-// I didn't do much refactoring between my intitial solution and my refactored solution. We used .splice, .shift, .reverse, and Math.floor.
+// We didn't use new methods in our refactored solution but we were able to simplify the code and get rid of the unnecessary condition if the number was only 4 digits.
