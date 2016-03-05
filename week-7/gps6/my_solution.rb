@@ -1,8 +1,8 @@
 
 # Virus Predictor
 
-# I worked on this challenge [by myself, with: ].
-# We spent [#] hours on this challenge.
+# I worked on this challenge with Emily Osowski.
+# We spent 1.5 hours on this challenge.
 
 # EXPLANATION OF require_relative
 # require_relative loads a file that follows the same path as the current file
