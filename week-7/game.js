@@ -4,7 +4,7 @@
 // Goals: Answer 5 math problems correctly in order to get the remote control. Player is asked math questions. If player earns 5 knowledge points, player wins the game and gets the remote.
 // Characters: Player
 // Objects: Player, remote control
-// Functions: Ask question, check number of knowledge points
+// Functions: Ask question, check to see if player is a winner. 
 
 // Pseudocode
 
@@ -115,39 +115,20 @@ function check() {
   }
 }
 
-// Driver code:
-console.log(player);
-console.log(remoteControl);
-console.log((question()));
-console.log(player);
-console.log(remoteControl);
-console.log((question()));
-console.log(player);
-console.log(remoteControl);
-console.log((question()));
-console.log(player);
-console.log(remoteControl);
-console.log((question()));
-console.log(player);
-console.log(remoteControl);
-console.log((question()));
-console.log((check()));
-console.log(player);
-console.log(remoteControl);
 
 
 // Reflection:
 // What was the most difficult part of this challenge?
-// The most difficult part was admitting defeat! The functionality I had intended to create for this game would have checked the see if the player's solution to the equation was correct or not, and to only award a knowledge point if the player was correct. I believe the game's current state satisfies the requirements of the assignment but this is not a very fun game as it just asks questions. For now we'll just assume whoever is asking the question of the player is verifying the answer...
+// The most difficult part was running out of time at the end of the week and admitting defeat on some aspects of my planned game. The functionality I had intended to create for this game would have checked the see if the player's solution to the equation was correct or not, and to only award a knowledge point if the player was correct. I believe the game's current state satisfies the requirements of the assignment but this is not a very fun game as it just asks questions. For now we'll just assume whoever is asking the question of the player is verifying the answer. Underneath my reflection I've pasted the code I had written that checks to see if answers are correct, although it's not functional yet.
 
 // What did you learn about creating objects and functions that interact with one another?
 // Creating objects and functions to interact with each other wasn't too difficult after spending the past week learning about that interaction but this challenge and the research I did to prepare gave me some "a-ha" moments seeing how games come together, even at the most basic level. 
 
 // Did you learn about any new built-in methods you could use in your refactored solution? If so, what were they and how do they work?
-// It wasn't a brand new method I used, but I used the Math.random to output random elements from an array of strings instead of just generating random numbers.
+// It wasn't a brand new method I used, but I used the Math.random in a different way when I needed to output random elements from an array of strings, instead of just generating random numbers.
 
 // How can you access and manipulate properties of objects?
-// You can access and manipulate properties in objects using the dot method, or the bracket method.
+// You can access and manipulate properties in objects using the dot method, or the bracket method. The dot method is written property.propertyvalue and bracket method looks like property["propertyvalue"]. I prefer the dot method.
 
 
   
