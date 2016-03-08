@@ -23,7 +23,34 @@ var scores = [ [80, 70, 70, 100],
 // __________________________________________
 // Write your code below.
 
-var gradebook = {
+// var gradebook = {
+//   Joseph: {testScores: scores[0]},
+//   Susan: {testScores: scores[1]},
+//   William: {testScores: scores[2]},
+//   Elizabeth: {testScores: scores[3]},
+//   addScore: function(name, score){
+//             return this[name]['testScores'].push(score)
+//   },
+//   getAverage: function(name){
+//     var total = 0;
+//     for (var i = 0; i < this[name].testScores.length; i++) {
+//       total += this[name].testScores[i];
+//     };
+//       return (total/this[name].testScores.length);
+//   }
+// };
+//   average = function(array){
+//     var total = 0;
+//     for (var i = 0; i < array.length; i++) {
+//       total += array[i];
+//     };
+//       return (total/array.length);
+// };
+
+
+// __________________________________________
+// Refactored Solution
+ var gradebook = {
   Joseph: {testScores: scores[0]},
   Susan: {testScores: scores[1]},
   William: {testScores: scores[2]},
@@ -39,6 +66,7 @@ var gradebook = {
       return (total/this[name].testScores.length);
   }
 };
+
   average = function(array){
     var total = 0;
     for (var i = 0; i < array.length; i++) {
@@ -50,34 +78,19 @@ var gradebook = {
 
 
 
-  // average: function(array){
-  //   var total = 0;
-  //   for (var i = 0; i < array.length; i++) {
-  //     total += array[i];
-  //      };
-  //     return (total/array.length);   
-  // }
-
-
-
-// Have addScore push the score to the value of the testScore property of the gradebook property that matches the value of the name argument.
-
-
-
-// __________________________________________
-// Refactored Solution
-
-
-
-
-
 
 
 
 // __________________________________________
 // Reflect
+// What did you learn about adding functions to objects?
+// I learned it was possible! I'd never considered it before but I'm glad to know we can add functions to objects. The syntax threw me a bit re: how to define the functions' name but quickly realized it was just like adding another property.
 
+// How did you iterate over nested arrays in JavaScript?
+// When we created a function to return a students' average, my pair and I used a for loop. 
 
+// Were there any new methods you were able to incorporate? If so, what were they and how did they work?
+// Not really a new method but passing functions to another function that is a property of an object was new for my pair and me.
 
 
 
