@@ -23,7 +23,7 @@
 
 
 
-Reflection
+8.4 Reflection
 
 What are databases for?
 
@@ -41,4 +41,3 @@ How can you select information out of a SQL database? What are some general guid
 
 SQL language has its own special syntax. SQUL commands are written in ALL CAPS and commands end with a semicolon. So to select all data from a table called 'examples' would be written this way: SELECT * FROM examples;
            
-
