@@ -32,11 +32,14 @@ var gradebook = {
             return this[name]['testScores'].push(score)
   },
   getAverage: function(name){
-    return this[name]['testScores'].average;
+    var total = 0;
+    for (var i = 0; i < this[name].testScores.length; i++) {
+      total += this[name].testScores[i];
+    };
+      return (total/this[name].testScores.length);
   }
 };
-
-  var average = function(array){
+  average = function(array){
     var total = 0;
     for (var i = 0; i < array.length; i++) {
       total += array[i];
