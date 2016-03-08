@@ -19,7 +19,7 @@
 
 10. SELECT regions.region_name, states.state_name FROM states INNER JOIN regions ON regions.id=states.region_id ORDER BY region_name;
 
-(tables image)(https://github.com/AlanaFarkas/Phase-0/blob/master/week-8/database-intro/connected_tables.png)
+![table image](https://github.com/AlanaFarkas/Phase-0/blob/master/week-8/database-intro/connected_tables.png)
 
 
 
