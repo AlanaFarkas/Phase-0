@@ -23,16 +23,34 @@ var scores = [ [80, 70, 70, 100],
 // __________________________________________
 // Write your code below.
 
-var students = ["Joseph", "Susan", "William", "Elizabeth"]
+// var gradebook = {
+//   Joseph: {testScores: scores[0]},
+//   Susan: {testScores: scores[1]},
+//   William: {testScores: scores[2]},
+//   Elizabeth: {testScores: scores[3]},
+//   addScore: function(name, score){
+//             return this[name]['testScores'].push(score)
+//   },
+//   getAverage: function(name){
+//     var total = 0;
+//     for (var i = 0; i < this[name].testScores.length; i++) {
+//       total += this[name].testScores[i];
+//     };
+//       return (total/this[name].testScores.length);
+//   }
+// };
+//   average = function(array){
+//     var total = 0;
+//     for (var i = 0; i < array.length; i++) {
+//       total += array[i];
+//     };
+//       return (total/array.length);
+// };
 
-var scores = [ [80, 70, 70, 100],
-               [85, 80, 90, 90],
-               [75, 70, 80, 75],
-               [100, 90, 95, 85] ]
 
-
-
-var gradebook = {
+// __________________________________________
+// Refactored Solution
+ var gradebook = {
   Joseph: {testScores: scores[0]},
   Susan: {testScores: scores[1]},
   William: {testScores: scores[2]},
@@ -41,11 +59,15 @@ var gradebook = {
             return this[name]['testScores'].push(score)
   },
   getAverage: function(name){
-    return average(this[name].testScores)
+    var total = 0;
+    for (var i = 0; i < this[name].testScores.length; i++) {
+      total += this[name].testScores[i];
+    };
+      return (total/this[name].testScores.length);
   }
 };
 
-var average = function(array){
+  average = function(array){
     var total = 0;
     for (var i = 0; i < array.length; i++) {
       total += array[i];
@@ -57,20 +79,18 @@ var average = function(array){
 
 
 
-// __________________________________________
-// Refactored Solution
-
-
-
-
-
-
 
 
 // __________________________________________
 // Reflect
+// What did you learn about adding functions to objects?
+// I learned it was possible! I'd never considered it before but I'm glad to know we can add functions to objects. The syntax threw me a bit re: how to define the functions' name but quickly realized it was just like adding another property.
 
+// How did you iterate over nested arrays in JavaScript?
+// When we created a function to return a students' average, my pair and I used a for loop. 
 
+// Were there any new methods you were able to incorporate? If so, what were they and how did they work?
+// Not really a new method but passing functions to another function that is a property of an object was new for my pair and me.
 
 
 
