@@ -1,7 +1,11 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 8.4-branch
+=======
+
+>>>>>>> 8cfc97bbbf6ec21babcda7baf0178cdf1cc490ea
 1. SELECT * FROM states;       
 
 2. SELECT * FROM regions;
@@ -22,8 +26,11 @@
 
 10. SELECT regions.region_name, states.state_name FROM states INNER JOIN regions ON regions.id=states.region_id ORDER BY region_name;
 <<<<<<< HEAD
+<<<<<<< HEAD
            
 =======
+=======
+>>>>>>> 8cfc97bbbf6ec21babcda7baf0178cdf1cc490ea
 
 ![table image](https://github.com/AlanaFarkas/Phase-0/blob/master/week-8/database-intro/connected_tables.png)
 
@@ -47,4 +54,7 @@ How can you select information out of a SQL database? What are some general guid
 
 SQL language has its own special syntax. SQUL commands are written in ALL CAPS and commands end with a semicolon. So to select all data from a table called 'examples' would be written this way: SELECT * FROM examples;
            
+<<<<<<< HEAD
 >>>>>>> 8.4-branch
+=======
+>>>>>>> 8cfc97bbbf6ec21babcda7baf0178cdf1cc490ea
