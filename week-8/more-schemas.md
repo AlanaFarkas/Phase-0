@@ -1,6 +1,6 @@
 ![one-to-one relationship](https://github.com/AlanaFarkas/Phase-0/blob/master/week-8/imgs/one-to-one-relationship.png)
 
-#To explain a one-to-one relationship, a grandfather has created two tables: one for his daughters, and one for his grandchildren. His daughters' ID is the primary key. This primary key is connected to a foreign key in the grandchildrens' table for the mother attribute. A grandchild can only have one mother.
+To explain a one-to-one relationship, a grandfather has created two tables: one for his daughters, and one for his grandchildren. His daughters' ID is the primary key. This primary key is connected to a foreign key in the grandchildrens' table for the mother attribute. A grandchild can only have one mother.
 
 ![many-to-many relationship](https://github.com/AlanaFarkas/Phase-0/blob/master/week-8/imgs/many-to-many-relationship.png)
 
