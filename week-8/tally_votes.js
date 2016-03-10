@@ -124,14 +124,7 @@ function winner(object) {
   };
 };
 
-// DRIVER CODE
-pushVotes(votes)
 
-console.log(voteCount)
-
-console.log(winner(voteCount))
-
-console.log(officers);
 // __________________________________________
 // Refactored Solution
 
@@ -169,7 +162,14 @@ function winner(object) {
 // __________________________________________
 // Reflection
 
+// What did you learn about iterating over nested objects in JavaScript?
+// Using for loops inside for loops to access nested objects was a tough concept for me to pick up at first but I see now that its necessary for going deeper into the 'levels' of our objects' data. 
 
+// Were you able to find useful methods to help you with this?
+// Yes, my pair and I used the .hasOwnProperty method to push new position nominees to the vote count object unless that nominees name already existed in the object. 
+
+// What concepts were solidified in the process of working through this challenge?
+// Declaring variables inside for loops threw me a bit during this challenge and I often felt lost in the code but my partner helped me back on track when I'd get lost and I feel like this is becoming more and more clear as I scrutinze our code. 
 
 
 
