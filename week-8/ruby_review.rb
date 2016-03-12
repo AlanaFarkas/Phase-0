@@ -81,7 +81,7 @@ end
   
 def see_all_pez
   flavor_profiles = {}
-  @flavors.each { |flav| flavor_profiles[flav]}
+  @flavors.each { |flav| flavor_profiles.push(flav)}
 end
 
 def add_pez(flavor)
