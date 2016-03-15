@@ -182,24 +182,30 @@
 
 # Initial Solution
 class Song
+  attr_reader :play
+  attr_reader :song_title
+  attr_reader :artist
  
   def initialize(song_title, artist)
-    @song = song_title
+    @song_title = song_title
     @artist = artist
   end
   
   def play
-    p "#{@song} by #{@artist}"
+    "#{@song_title} by #{@artist}"
   end
 end
 
-class Playlist
+class Playlist 
   def initialize(song_title1, song_title2, song_title3)
-    @song1 = song_title1
-    @song2 = song_title2
-    @song3 = song_title3
+    # @song1 = song_title1
+    # @song2 = song_title2
+    # @song3 = song_title3
+    @song = Song.new(@song_title, @artist)
   end
+
   def add(*songs)
+    puts @song_title 
   end
   def num_of_tracks
   end
