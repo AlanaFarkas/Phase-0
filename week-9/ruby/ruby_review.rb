@@ -178,9 +178,23 @@
 
 # Pseudocode
 
+# What are the methods you need to run the driver code?
+# Where do those methods belong?
+# What should those methods do?
+# How can you model real-world behavior through code?
+  
 
-
+# Pseudocode
+# DEFINE a Song class that takes two arguments: song_title and artist
+# DEFINE a Playlist class that takes three arguments: song_title1 song_title2 song_title3
+# DEFINE a method add in playlist that takes an unknown number of arguments and adds them to the playlist 
+# DEFINE a method num_of_tracks 
+# DEFINE a method play
+# DEFINE a method remove
+# DEFINE method includes? in playlist 
+# DEFINE method play_all in playlist 
 # Initial Solution
+
 class Song
   attr_reader :play
   attr_reader :song_title
@@ -198,46 +212,64 @@ end
 
 class Playlist 
   def initialize(song_title1, song_title2, song_title3)
-    # @song1 = song_title1
-    # @song2 = song_title2
-    # @song3 = song_title3
-    @song = Song.new(@song_title, @artist)
+    @song1 = song_title1
+    @song2 = song_title2
+    @song3 = song_title3
+    @my_playlist = [@song1, @song2, @song3]
   end
+  
 
   def add(*songs)
-    puts @song_title 
+    songs.each do |x|
+      @my_playlist << x
+    end
   end
+  
   def num_of_tracks
+    @my_playlist.length
   end
-  def remove(*)
+  
+  def remove(*songs)
+    songs.map! do |x|
+      @my_playlist.delete(x)
+    end
+     @my_playlist.length
   end
-  def includes?(*)
+  
+  
+  def includes?(*songs)
+   songs.map! do |x|
+    if @my_playlist.include?(x)
+      return true
+    else
+      return false
+    end
+    end
+    p @my_playlist
   end
+  
   def play_all
   end
+  
 end
 
 
-
-# Refactored Solution
-
-
-
-
-
-
-# DRIVER CODE AND TESTS GO BELOW THIS LINE
+# Refactored Solution   
+  
+# DRIVER CODE   
 one_by_one = Song.new("One by One", "Sirenia")
 world_so_cold = Song.new("World So Cold", "Three Days Grace")
 going_under = Song.new("Going Under", "Evanescence")
 
 my_playlist = Playlist.new(one_by_one, world_so_cold, going_under)
 
+
 lying_from_you = Song.new("Lying From You", "Linkin Park")
 angels = Song.new("Angels", "Within Temptation")
 
 my_playlist.add(lying_from_you, angels)
-p my_playlist.num_of_tracks == 5
+my_playlist
+my_playlist.num_of_tracks == 5
 going_under.play #How would you model a song getting "played" in Ruby? I used `puts` and `sleep`. You can model this however you want.
 my_playlist.remove(angels)
 p my_playlist.includes?(lying_from_you) == true
