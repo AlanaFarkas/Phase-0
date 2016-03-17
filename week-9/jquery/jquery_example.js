@@ -40,7 +40,7 @@ $( "h1:contains('My')" ).html("Rock Doves");
     $(this).attr('src', 'http://naturemappingfoundation.org/natmap/photos/birds/rock_dove_4064np.jpg')
   }).on('mouseleave', function(e){
     e.preventDefault()
-    $(this).attr('src', 'dbc_logo.png')
+    $(this).attr('src', 'jquery/dbc_logo.png')
   })
 
 
