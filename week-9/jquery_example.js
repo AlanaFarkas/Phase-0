@@ -52,6 +52,7 @@ $('div img').click(function () {
 
    });
 
+
 })  // end of the document.ready function: do not remove or write DOM manipulation below this.
 
 // What is jQuery?
@@ -63,9 +64,5 @@ $('div img').click(function () {
 // What did you learn about the DOM while working on this challenge?
 // I learned that accessing the Document Object Model (DOM) using Chrome Dev Tools is sort of like 
 // a map of all the HTML elements in our program, and what scripts are linked to the HTML file.
-
-
-
-
 
 
