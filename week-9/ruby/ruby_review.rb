@@ -281,4 +281,12 @@ my_playlist.display
 
 
 # Reflection
+# What concepts did you review in this challenge?
+# We reviewed classes and attribute methods.
+
+# What is still confusing to you about Ruby?
+# Passing methods to other methods is still a little fuzzy but mostly makes sense.
+
+# What are you going to study to get more prepared for Phase 1?
+# Classes, attritube methods, database relationships, and accessing nested data in JavaScript. 
 
